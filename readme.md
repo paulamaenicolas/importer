@@ -13,15 +13,15 @@
 7. Run "php artisan migrate".
 
 # Run Data Importer Function
-1. Run in your browser or POSTMAN this url <domain>:8000/api/getAllPlayers.
+1. Run in your browser or POSTMAN this url http://localhost:8000/api/getAllPlayers.
  - This is the function for importing data from the endpoint and saving it to MySQL database.
  - This can be added also in a cron job or similar.
 
 # RESTful API
 1. Run url below in your browser or POSTMAN,
-   - <domain>:8000/api/getAllPlayers
+   - http://localhost:8000/api/getAllPlayers
    - this will return list of all players with only ID, firstname and second name.
-2. Run this url <domain>:8000/api/showPlayerById/1, "1" is the ID of the player and this will return full data of a single player
+2. Run this url http://localhost:8000/api/showPlayerById/1, "1" is the ID of the player and this will return full data of a single player
 using the ID provided.
 
 # PHPUnit Test
