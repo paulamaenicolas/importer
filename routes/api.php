@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use App\Article;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,8 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('getAllPlayers', 'ImporterController@getAllPlayers');
+Route::get('showPlayerById/{player}', 'ImporterController@showPlayerById')->name('findPlayer');
+Route::get('importPlayers', 'ImporterController@importPlayers');
+
